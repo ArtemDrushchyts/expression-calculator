@@ -4,9 +4,8 @@ function eval() {
 }
 
 function expressionCalculator(expr) {
-    // write your solution here
+    return (new Function('return ' + expr))();
 }
-
 module.exports = {
     expressionCalculator
 }
